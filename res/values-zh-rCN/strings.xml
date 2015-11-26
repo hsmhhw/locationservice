@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">定位签到</string>
+    <string name="action_settings">设置</string>
+    <string name="main_external_user">外部用户</string>
+	<string name="main_internal_user">内部用户</string>
+	<string name="main_user_name">用户名</string>
+	<string name="main_password">密码</string>
+	<string name="main_Remember">记住用户名和密码</string>
+	<string name="main_Retrieve_password">找回密码</string>
+	<string name="main_signup">注册</string>
+	<string name="main_Login">登录</string>
+</resources>

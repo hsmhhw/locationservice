@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">locationservice</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_external_user">external user</string>
+	<string name="main_internal_user">internal user</string>
+	<string name="main_user_name">user name</string>
+	<string name="main_password">password</string>
+	<string name="main_Remember">Remember that usernames and passwords</string>
+	<string name="main_Retrieve_password">Retrieve password</string>
+	<string name="main_signup">Sign Up</string>
+	<string name="main_Login">Log In</string>
+</resources>
