@@ -1,8 +1,10 @@
 package com.shnu.locationservice;
 
 import com.shnu.locationservice.mms.Change_password;
+import com.shnu.locationservice.data.MD5;
 import com.shnu.locationservice.data.Uri;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
@@ -100,7 +102,55 @@ public class MainActivity extends Activity {
         getWindowManager().getDefaultDisplay().getMetrics(dm);
         Uri.width = dm.widthPixels;
         Uri.height = dm.heightPixels;
+        
+        SharedPreferences sp = getSharedPreferences("data", Context.MODE_PRIVATE);
+        name = sp.getString("name", "");
+        pass = sp.getString("password","");
+        
+        if(name.length() > 0 && pass.length() > 0){
+        	handler.sendEmptyMessage(0x125);
+        }
 		
+        out.setOnClickListener(new OnClickListener() {
+        	@SuppressWarnings("deprection")
+			@Override
+			public void onClick(View arg0) {
+				in.setBackgroundDrawable(getResources()
+						.getDrawable(R.drawable.in_btn));
+				out.setBackgroundDrawable(getResources()
+						.getDrawable(R.drawable.out_btn));
+				
+				Toast.makeText(MainActivity.this, "当前是外网登陆", Toast.LENGTH_LONG).show();
+			}
+		});
+        in.setOnClickListener(new OnClickListener() {
+			@SuppressWarnings("deprection")
+			@Override
+			public void onClick(View arg0) {
+				in.setBackgroundDrawable(getResources()
+						.getDrawable(R.drawable.in_btn));
+				out.setBackgroundDrawable(getResources()
+						.getDrawable(R.drawable.out_btn));
+				Toast.makeText(MainActivity.this, "待定义", Toast.LENGTH_LONG).show();
+			}
+		});
+        admin.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				name = username.getText().toString();
+				pass = password.getText().toString();
+				
+				new Thread(){
+					@Override
+					public void run(){
+						pass = MD5.GetMD5Code(pass);
+						//ifsuccess = GetPostUtil.sendPost(Uri.login, "name=" + name + "& password=" + pass  );
+					}
+				}.start();
+				
+			}
+		});
 	}
 	public void Save(String s1, String s2) {
 

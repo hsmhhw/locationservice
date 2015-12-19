@@ -6,6 +6,13 @@ URL是整个链接
 URI 是/question/68016373.html在baidu那边服务器上把http://zhidao.baidu.com/制作成了虚拟的路径的根*/
 
 
+
+/**
+ * @company 上海师范大学
+ * @author yanqi.hao
+ * @time 2015-10-10
+ *
+ */
 public class Uri {
 	//定义Uri总地址
 	private static String url = "http://localhost:8080/Beta/";
