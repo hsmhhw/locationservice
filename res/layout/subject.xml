@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/container" 
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#f0ffff"
+    >
+    <TextView 
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp" 
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+		android:gravity="center_vertical|left"
+		android:background="#a9dcf8"
+		android:text="@string/subject_User_login" 
+		android:textColor="#ffffff"       
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+    <ScrollView 
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="7dp"
+        android:layout_weight="1"
+        >
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="2dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="27dp"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                >
+               <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="#ff0000" />
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/t201"
+                    android:textColor="#777777" />
+                
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:ems="10"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" />
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+    
+
+</LinearLayout>

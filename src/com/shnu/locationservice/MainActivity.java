@@ -1,6 +1,8 @@
 package com.shnu.locationservice;
 
 import com.shnu.locationservice.mms.Change_password;
+import com.shnu.locationservice.mms.Subject;
+import com.shnu.locationservice.ui.MainTabActivity;
 import com.shnu.locationservice.data.MD5;
 import com.shnu.locationservice.data.Uri;
 import android.app.Activity;
@@ -12,6 +14,7 @@ import android.graphics.Paint;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -58,8 +61,21 @@ public class MainActivity extends Activity {
 					Save(name , pass);
 				}
 				Uri.name = name ;
+				Intent intent = new Intent();
+				intent.setClass(MainActivity.this, MainTabActivity.class);
+				startActivity(intent);
+				MainActivity.this.finish();
 			}
-			
+			if(msg.what == 0x124){
+				Toast.makeText(MainActivity.this, "登录失败", Toast.LENGTH_LONG).show();
+				
+			}
+			if(msg.what == 0x125){
+				Uri.name = name;
+				Intent intent = new Intent();
+				intent.setClass(MainActivity.this, MainTabActivity.class);
+				
+			}
 			
 		}
 
@@ -145,10 +161,25 @@ public class MainActivity extends Activity {
 					@Override
 					public void run(){
 						pass = MD5.GetMD5Code(pass);
-						//ifsuccess = GetPostUtil.sendPost(Uri.login, "name=" + name + "& password=" + pass  );
+						ifsuccess = GetPostUtil.sendPost(Uri.login, "name=" + name + "& password=" + pass  );
+						Log.v("11111", ifsuccess);
+						if("登陆成功".equals(ifsuccess)){
+							handler.sendEmptyMessage(0x123);
+						}else{
+							handler.sendEmptyMessage(0x124);
+						}
 					}
 				}.start();
-				
+			}
+		});
+        subject.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+
+				Intent intent = new Intent();
+				intent.setClass(MainActivity.this, Subject.class);
+				startActivity(intent);
 			}
 		});
 	}

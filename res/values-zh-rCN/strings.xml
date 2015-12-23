@@ -10,4 +10,16 @@
 	<string name="main_Retrieve_password">找回密码</string>
 	<string name="main_signup">注册</string>
 	<string name="main_Login">登录</string>
+	
+	<string name="subject_User_login">用户注册</string>
+	<string name="t201">用户名     </string>
+    <string name="t202">密码          </string>
+    <string name="t203">确认密码</string>
+    <string name="t204">昵称          </string>
+    <string name="t205">邮箱          </string>
+    <string name="t206">微信号</string>
+    <string name="t207">性别</string>
+    <string name="t208">职业</string>
+    <string name="t209">兴趣爱好</string>
+    <string name="t210">地址</string>
 </resources>
