@@ -24,4 +24,13 @@
     <string name="t208">Occupation</string>
     <string name="t209">Hobbies</string>
     <string name="t210">Address</string>
+    <string name="subject_name">name</string>
+    <string name="subject_phonenumber">phone number</string>
+    <string name="subject_adress">Adress</string>
+    <string name="subject_sex">Sex</string>
+    <string name="subject_job">Job</string>
+    <string name="subject_income">Income</string>
+    <string name="subject_phoneprice">Phone Prices</string>
+    <string name="subject_submit">Submit</string>
+    <string name="subject_back">Back</string>
 </resources>

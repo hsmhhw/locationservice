@@ -22,4 +22,13 @@
     <string name="t208">职业</string>
     <string name="t209">兴趣爱好</string>
     <string name="t210">地址</string>
+    <string name="subject_name">姓名</string>
+    <string name="subject_phonenumber">手机号</string>
+    <string name="subject_adress">地址</string>
+    <string name="subject_sex">性别</string>
+    <string name="subject_job">工作</string>
+    <string name="subject_income">收入情况</string>
+    <string name="subject_phoneprice">手机价格</string>
+    <string name="subject_submit">提交</string>
+    <string name="subject_back">返回</string>
 </resources>
