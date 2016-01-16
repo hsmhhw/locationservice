@@ -31,6 +31,7 @@ public class Uri {
 	public static int height = 100;
 	public static int what;
 	public static int if_mms = 0;
+	public static boolean start_service = false ;
 	
 	
 

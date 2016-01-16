@@ -33,4 +33,6 @@
     <string name="subject_phoneprice">Phone Prices</string>
     <string name="subject_submit">Submit</string>
     <string name="subject_back">Back</string>
+    
+    <string name="tab_home">Home</string>
 </resources>

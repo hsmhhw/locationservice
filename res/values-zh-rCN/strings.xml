@@ -31,4 +31,6 @@
     <string name="subject_phoneprice">手机价格</string>
     <string name="subject_submit">提交</string>
     <string name="subject_back">返回</string>
+    
+    <string name="tab_home">首页</string>
 </resources>

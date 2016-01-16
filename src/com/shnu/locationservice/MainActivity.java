@@ -74,6 +74,8 @@ public class MainActivity extends Activity {
 				Uri.name = name;
 				Intent intent = new Intent();
 				intent.setClass(MainActivity.this, MainTabActivity.class);
+				startActivity(intent);
+				MainActivity.this.finish();
 				
 			}
 			

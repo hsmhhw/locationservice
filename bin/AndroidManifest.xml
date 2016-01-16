@@ -25,6 +25,17 @@
         <activity
             android:name="com.shnu.locationservice.mms.Subject"
             android:screenOrientation="portrait" />
+        
+        <service 
+            android:permission=".RecordService"
+            android:name="com.shnu.locationservice.servises.RecordService"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action 
+                    android:name="shnu.service"/>
+            </intent-filter>
+        </service>
+        
     </application>
 
 </manifest>
