@@ -35,4 +35,9 @@
     <string name="subject_back">Back</string>
     
     <string name="tab_home">Home</string>
+    
+    <string name="about_location">About location</string>
+    <string name="about_update">Check Update</string>
+    <string name="about_instructions">Instructions</string>
+    
 </resources>

@@ -33,4 +33,10 @@
     <string name="subject_back">返回</string>
     
     <string name="tab_home">首页</string>
+    
+    <string name="about_location">关于考勤定位</string>
+    <string name="about_update">检查更新</string>
+    <string name="about_instructions">使用说明</string>
+    
+    
 </resources>
