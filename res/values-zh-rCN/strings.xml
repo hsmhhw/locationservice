@@ -38,5 +38,22 @@
     <string name="about_update">检查更新</string>
     <string name="about_instructions">使用说明</string>
     
+    <string name="b101">系统\n死机/重启/升级失败</string>
+    <string name="b102">通信\n通话/短信/信号/数据业务</string>
+    <string name="b103">应用\n第三方/系统应用</string>
+    <string name="b104">WIFI\nWIFI/WIFI直连/信号</string>
+    <string name="b105">蓝牙\n蓝牙相关问题</string>
+    <string name="b106">定位\n位置相关/导航类</string>
+    <string name="b107">存储\nSD卡/存储问题</string>
+    <string name="b108">屏幕\n屏幕显示/触控类</string>
+    <string name="b109">硬件\n硬件/外观/配件问题</string>
+    <string name="b110">相机\n拍照/录像类问题</string>
+    <string name="b111">性能\n卡顿/性能类问题</string>
+    <string name="b112">功耗\n发热/耗电/充电</string>
+    <string name="b113">多媒体\n音频/视频播放</string>
+    <string name="b114">传感器\n指纹/震动/指南针/NFC</string>
+    <string name="b115">体验类\n易用性/软硬件体验</string>
+    <string name="b116">其他\n非以上问题类型</string>
+    
     
 </resources>
