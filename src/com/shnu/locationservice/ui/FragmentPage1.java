@@ -3,6 +3,7 @@ package com.shnu.locationservice.ui;
 import java.util.List;
 
 import com.shnu.locationservice.R;
+import com.shnu.locationservice.R.string;
 import com.shnu.locationservice.data.Uri;
 import com.shnu.locationservice.utils.Log;
 
@@ -100,7 +101,27 @@ public class FragmentPage1 extends Fragment {
 		bt3.setOnClickListener(btlistener);
 		
 		
-	
+		bt4 = (Button) v.findViewById(R.id.button4);
+		w4 = getResources().getString(R.string.b104);
+		Spannable wordtoSpan4 = new SpannableString(w4);
+		wordtoSpan4.setSpan(new AbsoluteSizeSpan(size1), 0, 4, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+		wordtoSpan4.setSpan(new AbsoluteSizeSpan(size2), 4, 19, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+		wordtoSpan4.setSpan(new StyleSpan(Typeface.BOLD), 0, 4, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+		wordtoSpan4.setSpan(new ForegroundColorSpan(Color.DKGRAY), 0, 4, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+		wordtoSpan4.setSpan(new ForegroundColorSpan(Color.GRAY), 4, 19, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+		bt4.setText(wordtoSpan4);
+		bt4.setOnClickListener(btlistener);
+		
+		bt5 = (Button) v.findViewById(R.id.button5);
+		w5 = getResources().getString(R.string.b105);
+		Spannable wordtoSpan5 = new SpannableString(w5);
+		wordtoSpan5.setSpan(new AbsoluteSizeSpan(size1), 0, 2, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+		wordtoSpan5.setSpan(new AbsoluteSizeSpan(size2), 2, 9, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+		wordtoSpan5.setSpan(new StyleSpan(Typeface.BOLD), 0,2, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+		wordtoSpan5.setSpan(new ForegroundColorSpan(Color.DKGRAY), 0, 2, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+		wordtoSpan5.setSpan(new ForegroundColorSpan(Color.DKGRAY), 0, 2, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+		bt5.setText(wordtoSpan5);
+		bt5.setOnClickListener(btlistener);
 		
 		
 		
